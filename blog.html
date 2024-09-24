@@ -119,13 +119,14 @@
                         listener to each similar
                         element, we can add one to a parent element and use the event object's.target attribute to
                         initiate an event on a
-                        specific target.</p>
-                    <pre class="my-3">
-                        "const listContainer = document.getElementById('list-container');
+                        specific target.
+                    </p>
+                    <!-- <code>
+                        const listContainer = document.getElementById('list-container');
                         listContainer.addEventListener('click', function (event) {
                         event.target.parentNode.removeChild(event.target);
-                        })"
-                    </pre>
+                        })
+                    </code> -->
                     <p>
                         Here we have a single event listener and a single responding function. In the above-shown
                         method, we have improved the
