@@ -33,31 +33,33 @@
 </head>
 
 <body class="font-Lexend">
-    <header class="bg-orange-50 sticky top-0">
-        <nav class="w-11/12 mx-auto py-5 space-y-6 md:space-y-0">
-            <div class="flex items-center justify-center md:hidden">
-                <a class="flex items-center gap-3 text-lg font-semibold" href="index.html">
-                    <img src="assets/logo.png" alt="">Donate For Bangladesh
-                </a>
-            </div>
-            <div class="navbar">
-                <div class="navbar-start">
-                    <a class="btn btn-md bg-green-400 text-lg px-8" href="blog.html">Blog</a>
-                </div>
-                <div class="navbar-center md:flex">
-                    <a class="hidden md:flex items-center gap-3 text-lg font-semibold" href="index.html">
+    <header class="sticky top-0 z-50 backdrop-blur-lg">
+        <div class="bg-orange-50">
+            <nav class="w-11/12 mx-auto py-5 space-y-6 md:space-y-0">
+                <div class="flex items-center justify-center md:hidden">
+                    <h2 class="flex items-center gap-3 text-lg font-semibold">
                         <img src="assets/logo.png" alt="">Donate For Bangladesh
-                    </a>
+                    </h2>
                 </div>
-                <div class="navbar-end">
-                    <p class="flex items-center gap-2 text-lg">
-                        <img src="assets/coin.png" alt="">
-                        <span>55000</span>
-                        <span>BDT</span>
-                    </p>
+                <div class="navbar">
+                    <div class="navbar-start">
+                        <a class="btn btn-md bg-green-400 text-lg px-8" href="blog.html">Blog</a>
+                    </div>
+                    <div class="navbar-center md:flex">
+                        <a class="hidden md:flex items-center gap-3 text-lg font-semibold" href="index.html">
+                            <img src="assets/logo.png" alt="">Donate For Bangladesh
+                        </a>
+                    </div>
+                    <div class="navbar-end">
+                        <p class="flex items-center gap-2 text-lg">
+                            <img src="assets/coin.png" alt="">
+                            <span id="grand-total">55000</span>
+                            <span>BDT</span>
+                        </p>
+                    </div>
                 </div>
-            </div>
-        </nav>
+            </nav>
+        </div>
     </header>
 
     <main class="my-16">
@@ -121,21 +123,6 @@
                         initiate an event on a
                         specific target.
                     </p>
-                    <!-- <code>
-                        const listContainer = document.getElementById('list-container');
-                        listContainer.addEventListener('click', function (event) {
-                        event.target.parentNode.removeChild(event.target);
-                        })
-                    </code> -->
-                    <p>
-                        Here we have a single event listener and a single responding function. In the above-shown
-                        method, we have improved the
-                        performance, but we have lost access to individual li elements so to resolve this issue, we used
-                        a technique called
-                        event delegation. The event object has a special property call .target which will help us in
-                        getting access to
-                        individual li elements with the help of phases.
-                    </p>
                     <p class="mt-3">
                         <span class="font-semibold">Event delegation provides the following benefits:</span><br>
                         Improved performance: Attaching a single event
@@ -163,11 +150,16 @@
                         <li class="font-semibold">Create, Add, and Remove Elements</li>
                         <li class="font-semibold">Manipulating Element Attributes</li>
                     </ol>
+                    
                 </div>
             </div>
         </section>
     </main>
-
+    <script src='js/features.js'></script>
+    <script src="js/utilities.js"></script>
+    <script src="js/noakhali-donation.js"></script>
+    <script src="js/feni.js"></script>
+    <script src="js/quota-reform.js"></script>
 </body>
 
 </html>

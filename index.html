@@ -32,37 +32,41 @@
 </head>
 
 <body class="font-Lexend">
-    <header class="bg-orange-50 sticky top-0">
-        <nav class="w-11/12 mx-auto py-5 space-y-6 md:space-y-0">
-            <div class="flex items-center justify-center md:hidden">
-                <h2 class="flex items-center gap-3 text-lg font-semibold">
-                    <img src="assets/logo.png" alt="">Donate For Bangladesh
-                </h2>
-            </div>
-            <div class="navbar">
-                <div class="navbar-start">
-                    <a class="btn btn-md bg-green-400 text-lg px-8" href="blog.html">Blog</a>
-                </div>
-                <div class="navbar-center md:flex">
-                    <a class="hidden md:flex items-center gap-3 text-lg font-semibold" href="index.html">
+    <header class="sticky top-0 z-50 backdrop-blur-lg">
+        <div class="bg-orange-50">
+            <nav class="w-11/12 mx-auto py-5 space-y-6 md:space-y-0">
+                <div class="flex items-center justify-center md:hidden">
+                    <h2 class="flex items-center gap-3 text-lg font-semibold">
                         <img src="assets/logo.png" alt="">Donate For Bangladesh
-                    </a>
+                    </h2>
                 </div>
-                <div class="navbar-end">
-                    <p class="flex items-center gap-2 text-lg">
-                        <img src="assets/coin.png" alt="">
-                        <span id="grand-total">55000</span>
-                        <span>BDT</span>
-                    </p>
+                <div class="navbar">
+                    <div class="navbar-start">
+                        <a class="btn btn-md bg-green-400 text-lg px-8" href="blog.html">Blog</a>
+                    </div>
+                    <div class="navbar-center md:flex">
+                        <a class="hidden md:flex items-center gap-3 text-lg font-semibold" href="index.html">
+                            <img src="assets/logo.png" alt="">Donate For Bangladesh
+                        </a>
+                    </div>
+                    <div class="navbar-end">
+                        <p class="flex items-center gap-2 text-lg">
+                            <img src="assets/coin.png" alt="">
+                            <span id="grand-total">55000</span>
+                            <span>BDT</span>
+                        </p>
+                    </div>
                 </div>
-            </div>
-        </nav>
-    </header>
-    <main class="my-16">
-        <section class="flex items-center justify-center gap-5">
+            </nav>
+        </div>
+        <section class="mt-16 flex items-center justify-center gap-5">
             <button id="donation-btn" class="btn btn-md text-lg px-8 bg-green-400">Donation</button>
             <button id="history-btn" class="btn btn-md text-lg px-8">History</button>
         </section>
+        <div class="divider"></div>
+    </header>
+    
+    <main class="my-8">        
         <section id="donation-section" class="my-8 space-y-6">
             <div class="grid grid-cols-1 gap-3 items-center lg:grid-cols-2 border-2 rounded-xl p-5 w-9/12 mx-auto">
                 <div>
@@ -149,7 +153,8 @@
                     <div class="my-3 space-y-4">
                         <input id="quota-reform-donation-input" class="w-full p-4 rounded-xl border-2" type="text"
                             placeholder="Write Donation Amount"><br>
-                        <button id="quota-reform-donation-btn" class="btn w-full bg-green-400 text-lg">Donate Now</button>
+                        <button id="quota-reform-donation-btn" class="btn w-full bg-green-400 text-lg">Donate
+                            Now</button>
                     </div>
                 </div>
             </div>
@@ -159,7 +164,7 @@
                     <div class="flex justify-center">
                         <img class="" src="assets/coin.png" alt="">
                     </div>
-            
+
                     <p class="py-4 text-center">You Have Donated for Humankind.</p>
                     <h3 class="text-lg font-bold text-center py-4">Successfully</h3>
                     <div class="modal-action justify-center">
