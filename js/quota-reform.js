@@ -11,7 +11,7 @@ document.getElementById('quota-reform-donation-btn').addEventListener(
         let now = new Date();
 
         if (isNaN(donationValue) || donationValue < 0 || donationValue > grandTotal) {
-            return alert("Enter a Valid Amount");
+            return alert("Invalid Donation Amount");
         }
 
         const updatedBalance = donationValue + balance;
@@ -24,7 +24,7 @@ document.getElementById('quota-reform-donation-btn').addEventListener(
         history.innerHTML += `
             <div class="border-2 rounded-xl p-10 space-y-4 w-9/12">
                 <h4 class="font-bold">${donationValue} Taka is Donated for Quota Reform injured, Bangladesh</h4>
-                <p>${now.toString()}</p>
+                <p>Date: ${now.toString()}</p>
             </div>
         ` 
 
