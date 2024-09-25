@@ -23,7 +23,7 @@ document.getElementById('noakhali-donation-btn').addEventListener(
         history.innerHTML += `
             <div class="border-2 rounded-xl p-10 space-y-4 w-9/12">
                 <h4 class="font-bold">${donationValue} Taka is Donated for famine-2024 at Noakhali, Bangladesh</h4>
-                <p>Date: ${now.toString()}</p>
+                <p class="bg-slate-100 p-2 rounded-md text-sm">Date: ${now.toString()}</p>
             </div>
         ` 
 
